@@ -1,2 +1,399 @@
-/*    */
-@charset "utf-8";*{margin:0;padding:0}body{background:#003d4c;color:#fff;font-family:'lucida grande',verdana,helvetica,arial,sans-serif;font-size:90%;margin:0}a{color:#003d4c;text-decoration:underline;font-weight:700}a:hover{color:#367889;text-decoration:none}a img{border:0}h1,h2,h3,h4{font-weight:400;margin-bottom:.5em}h1{background:#fff;color:#003d4c;font-size:100%}h2{background:#fff;color:#e32;font-family:'Gill Sans','lucida grande',helvetica,arial,sans-serif;font-size:190%}h3{color:#2c6877;font-family:'Gill Sans','lucida grande',helvetica,arial,sans-serif;font-size:165%}h4{color:#993;font-weight:400}ul,li{margin:0 12px}p{margin:0 0 1em}#container{text-align:left}#header{padding:10px 20px}#header h1{line-height:20px;background:#003d4c url(../img/cake.icon.png) no-repeat left;color:#fff;padding:0 30px}#header h1 a{color:#fff;background:#003d4c;font-weight:400;text-decoration:none}#header h1 a:hover{color:#fff;background:#003d4c;text-decoration:underline}#content{background:#fff;clear:both;color:#333;padding:10px 20px 40px;overflow:auto}#footer{clear:both;padding:6px 10px;text-align:right}div.form,div.index,div.view{float:right;width:76%;border-left:1px solid #666;padding:10px 2%}div.actions{float:left;width:16%;padding:10px 1.5%}div.actions h3{padding-top:0;color:#777}table{border-right:0;clear:both;color:#333;margin-bottom:10px;width:100%}th{border:0;border-bottom:2px solid #555;text-align:left;padding:4px}th a{display:block;padding:2px 4px;text-decoration:none}th a.asc:after{content:' ⇣'}th a.desc:after{content:' ⇡'}table tr td{padding:6px;text-align:left;vertical-align:top;border-bottom:1px solid #ddd}table tr:nth-child(even){background:#f9f9f9}td.actions{text-align:center;white-space:nowrap}table td.actions a{margin:0 6px;padding:2px 5px}.cake-sql-log{background:#fff}.cake-sql-log td{padding:4px 8px;text-align:left;font-family:Monaco,Consolas,"Courier New",monospaced}.cake-sql-log caption{color:#fff}.paging{background:#fff;color:#ccc;margin-top:1em;clear:both}.paging .current,.paging .disabled,.paging a{text-decoration:none;padding:5px 8px;display:inline-block}.paging>span{display:inline-block;border:1px solid #ccc;border-left:0}.paging>span:hover{background:#efefef}.paging .prev{border-left:1px solid #ccc;-moz-border-radius:4px 0 0 4px;-webkit-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px}.paging .next{-moz-border-radius:0 4px 4px 0;-webkit-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0}.paging .disabled{color:#ddd}.paging .disabled:hover{background:transparent}.paging .current{background:#efefef;color:#c73e14}dl{line-height:2em;margin:0;width:60%}dl dd:nth-child(4n+2),dl dt:nth-child(4n+1){background:#f4f4f4}dt{font-weight:700;padding-left:4px;vertical-align:top;width:10em}dd{margin-left:10em;margin-top:-2em;vertical-align:top}form{clear:both;margin-right:20px;padding:0;width:95%}fieldset{border:0;margin-bottom:1em;padding:16px 10px}fieldset legend{color:#e32;font-size:160%;font-weight:700}fieldset fieldset{margin-top:0;padding:10px 0 0}fieldset fieldset legend{font-size:120%;font-weight:400}fieldset fieldset div{clear:left;margin:0 20px}form div{clear:both;margin-bottom:1em;padding:.5em;vertical-align:text-top}form .input{color:#444}form .required{font-weight:700}form .required label:after{color:#e32;content:'*';display:inline}form div.submit{border:0;clear:both;margin-top:10px}label{display:block;font-size:110%;margin-bottom:3px}input,textarea{clear:both;font-size:140%;font-family:"frutiger linotype","lucida grande",verdana,sans-serif;padding:1%;width:98%}select{clear:both;font-size:120%;vertical-align:text-bottom}select[multiple=multiple]{width:100%}option{font-size:120%;padding:0 3px}input[type=checkbox]{clear:left;float:left;margin:0 6px 7px 2px;width:auto}div.checkbox label{display:inline}input[type=radio]{float:left;width:auto;margin:6px 0;padding:0;line-height:26px}.radio label{margin:0 0 6px 20px;line-height:26px}input[type=submit]{display:inline;font-size:110%;width:auto}form .submit input[type=submit]{background:#62af56;background-image:-webkit-gradient(linear,left top,left bottom,from(#76BF6B),to(#3B8230));background-image:-webkit-linear-gradient(top,#76BF6B,#3B8230);background-image:-moz-linear-gradient(top,#76BF6B,#3B8230);border-color:#2d6324;color:#fff;text-shadow:rgba(0,0,0,.5) 0 -1px 0;padding:8px 10px}form .submit input[type=submit]:hover{background:#5BA150}form .error{background:#FFDACC;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;font-weight:400}form .error-message{-moz-border-radius:none;-webkit-border-radius:none;border-radius:none;border:0;background:0;margin:0;padding-left:4px;padding-right:0}form .error,form .error-message{color:#9E2424;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;-o-box-shadow:none;box-shadow:none;text-shadow:none}.message{clear:both;color:#fff;font-size:140%;font-weight:700;margin:0 0 1em;padding:5px}.success,.message,.cake-error,.cake-debug,.notice,p.error,.error-message{background:#fc0;background-repeat:repeat-x;background-image:-moz-linear-gradient(top,#fc0,#E6B800);background-image:-ms-linear-gradient(top,#fc0,#E6B800);background-image:-webkit-gradient(linear,left top,left bottom,from(#fc0),to(#E6B800));background-image:-webkit-linear-gradient(top,#fc0,#E6B800);background-image:-o-linear-gradient(top,#fc0,#E6B800);background-image:linear-gradient(top,#fc0,#E6B800);text-shadow:0 -1px 0 rgba(0,0,0,.25);border:1px solid rgba(0,0,0,.2);margin-bottom:18px;padding:7px 14px;color:#404040;text-shadow:0 1px 0 rgba(255,255,255,.5);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.25);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.25)}.success,.message,.cake-error,p.error,.error-message{clear:both;color:#fff;background:#c43c35;border:1px solid rgba(0,0,0,.5);background-repeat:repeat-x;background-image:-moz-linear-gradient(top,#ee5f5b,#c43c35);background-image:-ms-linear-gradient(top,#ee5f5b,#c43c35);background-image:-webkit-gradient(linear,left top,left bottom,from(#ee5f5b),to(#c43c35));background-image:-webkit-linear-gradient(top,#ee5f5b,#c43c35);background-image:-o-linear-gradient(top,#ee5f5b,#c43c35);background-image:linear-gradient(top,#ee5f5b,#c43c35);text-shadow:0 -1px 0 rgba(0,0,0,.3)}.success{clear:both;color:#fff;border:1px solid rgba(0,0,0,.5);background:#3B8230;background-repeat:repeat-x;background-image:-webkit-gradient(linear,left top,left bottom,from(#76BF6B),to(#3B8230));background-image:-webkit-linear-gradient(top,#76BF6B,#3B8230);background-image:-moz-linear-gradient(top,#76BF6B,#3B8230);background-image:-ms-linear-gradient(top,#76BF6B,#3B8230);background-image:-o-linear-gradient(top,#76BF6B,#3B8230);background-image:linear-gradient(top,#76BF6B,#3B8230);text-shadow:0 -1px 0 rgba(0,0,0,.3)}p.error{font-family:Monaco,Consolas,Courier,monospace;font-size:120%;padding:.8em;margin:1em 0}p.error em{font-weight:400;line-height:140%}.notice{color:#000;display:block;font-size:120%;padding:.8em;margin:1em 0}.success{color:#fff}.actions ul{margin:0;padding:0}.actions li{margin:0 0 .5em;list-style-type:none;white-space:nowrap;padding:0}.actions ul li a{font-weight:400;display:block;clear:both}input[type=submit],.actions ul li a,.actions a{font-weight:400;padding:4px 8px;background:#dcdcdc;background-image:-webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#dcdcdc));background-image:-webkit-linear-gradient(top,#fefefe,#dcdcdc);background-image:-moz-linear-gradient(top,#fefefe,#dcdcdc);background-image:-ms-linear-gradient(top,#fefefe,#dcdcdc);background-image:-o-linear-gradient(top,#fefefe,#dcdcdc);background-image:linear-gradient(top,#fefefe,#dcdcdc);color:#333;border:1px solid #bbb;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-decoration:none;text-shadow:#fff 0 1px 0;min-width:0;-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 1px 1px rgba(0,0,0,.2);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 1px 1px rgba(0,0,0,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 1px 1px rgba(0,0,0,.2);-webkit-user-select:none;user-select:none}.actions ul li a:hover,.actions a:hover{background:#ededed;border-color:#acacac;text-decoration:none}input[type=submit]:active,.actions ul li a:active,.actions a:active{background:#eee;background-image:-webkit-gradient(linear,left top,left bottom,from(#dfdfdf),to(#eee));background-image:-webkit-linear-gradient(top,#dfdfdf,#eee);background-image:-moz-linear-gradient(top,#dfdfdf,#eee);background-image:-ms-linear-gradient(top,#dfdfdf,#eee);background-image:-o-linear-gradient(top,#dfdfdf,#eee);background-image:linear-gradient(top,#dfdfdf,#eee);text-shadow:#eee 0 1px 0;-moz-box-shadow:inset 0 1px 4px rgba(0,0,0,.3);-webkit-box-shadow:inset 0 1px 4px rgba(0,0,0,.3);box-shadow:inset 0 1px 4px rgba(0,0,0,.3);border-color:#aaa;text-decoration:none}.related{clear:both;display:block}pre{color:#000;background:#f0f0f0;padding:15px;-moz-box-shadow:1px 1px 2px rgba(0,0,0,.3);-webkit-box-shadow:1px 1px 2px rgba(0,0,0,.3);box-shadow:1px 1px 2px rgba(0,0,0,.3)}.cake-debug-output{padding:0;position:relative}.cake-debug-output>span{position:absolute;top:5px;right:5px;background:rgba(255,255,255,.3);-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:5px 6px;color:#000;display:block;float:left;-moz-box-shadow:inset 0 1px 0 rgba(0,0,0,.25),0 1px 0 rgba(255,255,255,.5);-webkit-box-shadow:inset 0 1px 0 rgba(0,0,0,.25),0 1px 0 rgba(255,255,255,.5);box-shadow:inset 0 1px 0 rgba(0,0,0,.25),0 1px 0 rgba(255,255,255,.5);text-shadow:0 1px 1px rgba(255,255,255,.8)}.cake-debug,.cake-error{font-size:16px;line-height:20px;clear:both}.cake-error>a{text-shadow:none}.cake-error{white-space:normal}.cake-stack-trace{background:rgba(255,255,255,.7);color:#333;margin:10px 0 5px;padding:10px 10px 0;font-size:120%;line-height:140%;overflow:auto;position:relative;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}.cake-stack-trace a{text-shadow:none;background:rgba(255,255,255,.7);padding:5px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;margin:0 4px 10px 2px;font-family:sans-serif;font-size:14px;line-height:14px;display:inline-block;text-decoration:none;-moz-box-shadow:inset 0 1px 0 rgba(0,0,0,.3);-webkit-box-shadow:inset 0 1px 0 rgba(0,0,0,.3);box-shadow:inset 0 1px 0 rgba(0,0,0,.3)}.cake-code-dump pre{position:relative;overflow:auto}.cake-context{margin-bottom:10px}.cake-stack-trace pre{color:#000;background-color:#F0F0F0;margin:0 0 10px;padding:1em;overflow:auto;text-shadow:none}.cake-stack-trace li{padding:10px 5px 0;margin:0 0 4px;font-family:monospace;border:1px solid #bbb;-moz-border-radius:4px;-wekbkit-border-radius:4px;border-radius:4px;background:#dcdcdc;background-image:-webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#dcdcdc));background-image:-webkit-linear-gradient(top,#fefefe,#dcdcdc);background-image:-moz-linear-gradient(top,#fefefe,#dcdcdc);background-image:-ms-linear-gradient(top,#fefefe,#dcdcdc);background-image:-o-linear-gradient(top,#fefefe,#dcdcdc);background-image:linear-gradient(top,#fefefe,#dcdcdc)}.cake-code-dump pre,.cake-code-dump pre code{clear:both;font-size:12px;line-height:15px;margin:4px 2px;padding:4px;overflow:auto}.cake-code-dump .code-highlight{display:block;background-color:rgba(255,255,0,.5)}.code-coverage-results div.code-line{padding-left:5px;display:block;margin-left:10px}.code-coverage-results div.uncovered span.content{background:#ecc}.code-coverage-results div.covered span.content{background:#cec}.code-coverage-results div.ignored span.content{color:#aaa}.code-coverage-results span.line-num{color:#666;display:block;float:left;width:20px;text-align:right;margin-right:5px}.code-coverage-results span.line-num strong{color:#666}.code-coverage-results div.start{border:1px solid #aaa;border-width:1px 1px 0;margin-top:30px;padding-top:5px}.code-coverage-results div.end{border:1px solid #aaa;border-width:0 1px 1px;margin-bottom:30px;padding-bottom:5px}.code-coverage-results div.realstart{margin-top:0}.code-coverage-results p.note{color:#bbb;padding:5px;margin:5px 0 10px;font-size:10px}.code-coverage-results span.result-bad{color:#a00}.code-coverage-results span.result-ok{color:#fa0}.code-coverage-results span.result-good{color:#0a0}#url-rewriting-warning{display:none}html,body{font:.875em/1.28571 Arial,sans-serif;min-height:100%;font-weight:200}h1,.alpha{font-size:24px;font-size:1.71429rem;line-height:1.5}h2,.beta{font-size:20px;font-size:1.42857rem;line-height:1.8}h3,.gamma{font-size:15px;font-size:1.07143rem;line-height:1.2}h4,.delta{font-size:14px;font-size:1rem;line-height:1.28571}h5,.epsilon{font-size:12px;font-size:.85714rem;line-height:1.5}h6,.zeta{font-size:12px;font-size:.85714rem;line-height:1.5}.giga{font-size:96px;font-size:6.85714rem;line-height:1.125}.mega{font-size:72px;font-size:5.14286rem;line-height:1}.kilo{font-size:38px;font-size:2.71429rem;line-height:1.42105}.smallprint,.milli{font-size:12px;font-size:.85714rem;line-height:1.5}.micro{font-size:10px;font-size:.71429rem;line-height:1.8}.display--none{display:none}.display--block{display:block}.display--inline{display:inline}.display--table-cell{display:table-cell}.float--right{float:right!important}.float--left{float:left!important}.float--none{float:none!important}.clear--both{clear:both!important}.clear--right{clear:right!important}.clear--left{clear:left!important}.clear--none{clear:none!important}.text--left{text-align:left!important}.text--center{text-align:center!important}.text--right{text-align:right!important}.font--italic{font-style:italic!important}.weight--light{font-weight:300!important}.weight--normal{font-weight:400!important}.weight--semibold{font-weight:600!important}.position--relative{position:relative}.position--absolute{position:absolute}.position--inherit{position:inherit}.position--fixed{position:fixed}.caps{text-transform:uppercase!important}.bg--white{background-color:#fff}.bg--black{background-color:#000}.visible-large-desktop{display:none}@media (min-width:1200px){.visible-large-desktop{display:block}}html,body{margin:0;padding:0;min-height:100%;height:100%}
+/* BAES OF FRAMEWORK!
+*****************************************/
+/* IMPORT FONTS
+*****************************************/
+/* BASE FONT
+*****************************************/
+/* SIZES
+*****************************************/
+/* SPACERS
+*****************************************/
+/* COLORS
+*****************************************/
+/**
+ *	for the syntax look at:
+ *	http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+ *	
+ *	BEM syntax:
+ *	
+ *	.block{}
+ *	.block__element{}
+ * 	.block--modifier{}
+ *
+ *	.person{}
+ *	.person__hand{}
+ *	.person--female{}
+ *	.person--female__hand{}
+ *	.person__hand--left{}
+ *
+ *	to see what is BEM ( Blocks, Elements, Modifiers ) check:
+ *	http://bem.info/method/definitions/
+ */
+/* COMPASS
+*****************************************/
+/* GENERATED SIZES
+*****************************************/
+/* MIXINS
+*****************************************/
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10px);`
+ *
+ * Thanks to @redclov3r for the `line-height` Sass:
+ * twitter.com/redclov3r/status/250301539321798657
+ */
+/**
+ * Style any number of headings in one fell swoop, e.g.:
+ *
+   .foo{
+       @include headings(1, 3){
+           color:#BADA55;
+       }
+    }
+ *
+ * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
+ * @thierrylemoulec for refining and improving my initial mixin.
+ */
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ */
+/**
+ * Create CSS keyframe animations for all vendors in one go, e.g.:
+ *
+   .foo{
+       @include vendor(animation, shrink 3s);
+   }
+
+   @include keyframe(shrink){
+       from{
+           font-size:5em;
+       }
+   }
+ *
+ * Courtesy of @integralist: twitter.com/integralist/status/260484115315437569
+ */
+/**
+ * Force overly long spans of text to truncate, e.g.:
+ *
+   `@include truncate(100%);`
+ *
+ * Where `$truncation-boundary` is a united measurement.
+ */
+/**
+ * CSS arrows!!! But... before you read on, you might want to grab a coffee...
+ *
+ * This mixin creates a CSS arrow on a given element. We can have the arrow
+ * appear in one of 12 locations, thus:
+ *
+ *       01    02    03
+ *    +------------------+
+ * 12 |                  | 04
+ *    |                  |
+ * 11 |                  | 05
+ *    |                  |
+ * 10 |                  | 06
+ *    +------------------+
+ *       09    08    07
+ *
+ * You pass this position in along with a desired arrow color and optional
+ * border color, for example:
+ *
+ * `@include arrow(top, left, red)`
+ *
+ * for just a single, red arrow, or:
+ *
+ * `@include arrow(bottom, center, red, black)`
+ *
+ * which will create a red triangle with a black border which sits at the bottom
+ * center of the element. Call the mixin thus:
+ *
+   .foo{
+       background-color:#BADA55;
+       border:1px solid #ACE;
+       @include arrow(top, left, #BADA55, #ACE);
+   }
+ *
+ */
+/**
+ * Media query mixin. Based on bootstrap media queries!!!
+ *
+ * large-desktop
+ * tablet
+ * phone-to-tablet
+ * phone
+ *
+ * Not using a media query will, naturally, serve styles to all devices
+ *
+ * `@include media-query(phone){ [styles here] }`
+ *
+ */
+/* HTML PAGE BASE
+*****************************************/
+/* line 353, app/theme/_framework.scss */
+html, body {
+  font: 0.875em/1.28571 "Arial", sans-serif;
+  min-height: 100%;
+  font-weight: 200;
+}
+
+/* HEADINGS
+*****************************************/
+/* line 361, app/theme/_framework.scss */
+h1, .alpha {
+  font-size: 24px;
+  font-size: 1.71429rem;
+  line-height: 1.5;
+}
+
+/* line 364, app/theme/_framework.scss */
+h2, .beta {
+  font-size: 20px;
+  font-size: 1.42857rem;
+  line-height: 1.8;
+}
+
+/* line 367, app/theme/_framework.scss */
+h3, .gamma {
+  font-size: 15px;
+  font-size: 1.07143rem;
+  line-height: 1.2;
+}
+
+/* line 370, app/theme/_framework.scss */
+h4, .delta {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.28571;
+}
+
+/* line 373, app/theme/_framework.scss */
+h5, .epsilon {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.5;
+}
+
+/* line 376, app/theme/_framework.scss */
+h6, .zeta {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.5;
+}
+
+/* FAT SIZES
+*****************************************/
+/* line 382, app/theme/_framework.scss */
+.giga {
+  font-size: 96px;
+  font-size: 6.85714rem;
+  line-height: 1.125;
+}
+
+/* line 385, app/theme/_framework.scss */
+.mega {
+  font-size: 72px;
+  font-size: 5.14286rem;
+  line-height: 1;
+}
+
+/* line 388, app/theme/_framework.scss */
+.kilo {
+  font-size: 38px;
+  font-size: 2.71429rem;
+  line-height: 1.42105;
+}
+
+/* SMALL SIZES
+*****************************************/
+/* line 395, app/theme/_framework.scss */
+.smallprint,
+.milli {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.5;
+}
+
+/* line 398, app/theme/_framework.scss */
+.micro {
+  font-size: 10px;
+  font-size: 0.71429rem;
+  line-height: 1.8;
+}
+
+/* HELPERS
+*****************************************/
+/* line 404, app/theme/_framework.scss */
+.display--none {
+  display: none;
+}
+
+/* line 405, app/theme/_framework.scss */
+.display--block {
+  display: block;
+}
+
+/* line 406, app/theme/_framework.scss */
+.display--inline {
+  display: inline;
+}
+
+/* line 407, app/theme/_framework.scss */
+.display--table-cell {
+  display: table-cell;
+}
+
+/* line 409, app/theme/_framework.scss */
+.float--right {
+  float: right !important;
+}
+
+/* line 410, app/theme/_framework.scss */
+.float--left {
+  float: left !important;
+}
+
+/* line 411, app/theme/_framework.scss */
+.float--none {
+  float: none !important;
+}
+
+/* line 413, app/theme/_framework.scss */
+.clear--both {
+  clear: both !important;
+}
+
+/* line 414, app/theme/_framework.scss */
+.clear--right {
+  clear: right !important;
+}
+
+/* line 415, app/theme/_framework.scss */
+.clear--left {
+  clear: left !important;
+}
+
+/* line 416, app/theme/_framework.scss */
+.clear--none {
+  clear: none !important;
+}
+
+/* line 418, app/theme/_framework.scss */
+.text--left {
+  text-align: left  !important;
+}
+
+/* line 419, app/theme/_framework.scss */
+.text--center {
+  text-align: center !important;
+}
+
+/* line 420, app/theme/_framework.scss */
+.text--right {
+  text-align: right !important;
+}
+
+/* line 422, app/theme/_framework.scss */
+.font--italic {
+  font-style: italic !important;
+}
+
+/* line 424, app/theme/_framework.scss */
+.weight--light {
+  font-weight: 300 !important;
+}
+
+/* line 425, app/theme/_framework.scss */
+.weight--normal {
+  font-weight: 400 !important;
+}
+
+/* line 426, app/theme/_framework.scss */
+.weight--semibold {
+  font-weight: 600 !important;
+}
+
+/* line 428, app/theme/_framework.scss */
+.position--relative {
+  position: relative;
+}
+
+/* line 429, app/theme/_framework.scss */
+.position--absolute {
+  position: absolute;
+}
+
+/* line 430, app/theme/_framework.scss */
+.position--inherit {
+  position: inherit;
+}
+
+/* line 431, app/theme/_framework.scss */
+.position--fixed {
+  position: fixed;
+}
+
+/* line 433, app/theme/_framework.scss */
+.caps {
+  text-transform: uppercase !important;
+}
+
+/* line 435, app/theme/_framework.scss */
+.bg--white {
+  background-color: white;
+}
+
+/* line 436, app/theme/_framework.scss */
+.bg--black {
+  background-color: black;
+}
+
+/* line 438, app/theme/_framework.scss */
+.visible-large-desktop {
+  display: none;
+}
+@media (min-width: 1200px) {
+  /* line 438, app/theme/_framework.scss */
+  .visible-large-desktop {
+    display: block;
+  }
+}
+
+/* PLUGINS
+*****************************************/
+/* MIXINS
+*****************************************/
+/* THEME
+*****************************************/
+/**
+ *	for the syntax look at:
+ *	http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+ *	
+ *	BEM syntax:
+ *	
+ *	.block{}
+ *	.block__element{}
+ * 	.block--modifier{}
+ *
+ *	.person{}
+ *	.person__hand{}
+ *	.person--female{}
+ *	.person--female__hand{}
+ *	.person__hand--left{}
+ *
+ *	to see what is BEM ( Blocks, Elements, Modifiers ) check:
+ *	http://bem.info/method/definitions/
+ */
+/* HTML
+*****************************************/
+/* line 23, app/theme/_main.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+}

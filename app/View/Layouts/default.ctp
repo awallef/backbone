@@ -30,7 +30,17 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css(array(
+                    'vendors/cake.generic',
+                    'app'
+                ));
+                echo $this->Html->script(array(
+                    'vendors/json2',
+                    'vendors/jquery-1.10.2.min',
+                    'vendors/underscore',
+                    'vendors/backbone',
+                    'app'
+                ));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -58,5 +68,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+    <script>
+(function(){
+    var router = new App.Routers.ApplicationRouter();
+    Backbone.history.here = "<?php echo $this->here; ?>";
+    Backbone.history.start({
+        pushState: true
+    });
+})();    
+</script>
 </body>
 </html>

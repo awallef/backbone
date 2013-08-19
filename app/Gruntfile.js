@@ -8,43 +8,23 @@ module.exports = function (grunt) {
             prod: {
                 options: {
                     sassDir: 'webroot/css/app',
-                    cssDir: 'webroot/css/app',
+                    cssDir: 'webroot/css',
                     environment: 'production'
                 }
             },
             dev: {
                 options: {
                     sassDir: 'webroot/css/app',
-                    cssDir: 'webroot/css/app'
+                    cssDir: 'webroot/css'
                 }
             }
         },
         
-        cssmin: {
-          compress: {
-            options: {
-              banner: '/*    */'
-            },
-            files: {
-              'webroot/css/app.css': ['webroot/css/vendors/*', 'webroot/css/app/app.css']
-            }
-          }
-        },
-        
         // JS
-        concat: {
-            options: {
-                separator: ';'
-            },
-            dist: {
-                src: ['webroot/js/vendors/*','webroot/js/app/app.js'],
-                dest: 'webroot/js/app.js'
-            }
-        },
-        
         uglify: {
             options: {
-                banner: '/*!    */'
+                banner: '/*!    */',
+                beautify: true
             },
             dist: {
                 src: [
@@ -54,7 +34,7 @@ module.exports = function (grunt) {
                 'webroot/js/app/models/*',
                 'webroot/js/app/views/*',
                 ],
-                dest: 'webroot/js/app/app.js'
+                dest: 'webroot/js/app.js'
             }
         },
         
@@ -68,7 +48,7 @@ module.exports = function (grunt) {
                 'webroot/js/app/models/*',
                 'webroot/js/app/views/*'
                 ],
-                tasks: ['uglify','concat'],
+                tasks: ['uglify'],
                 options: {
                     nospawn: true
                 }
@@ -78,17 +58,17 @@ module.exports = function (grunt) {
                 'webroot/css/app/app.scss',
                 'webroot/css/app/**/*.scss'
                 ],
-                tasks: ['compass:dev','cssmin']
+                tasks: ['compass:dev']
             }
         }
     });
     
     // tasks from npm
     grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    //grunt.loadNpmTasks('grunt-contrib-cssmin');
     
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-concat');
+    //grunt.loadNpmTasks('grunt-contrib-concat');
     
     grunt.loadNpmTasks('grunt-contrib-watch');
     
